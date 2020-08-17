@@ -25,6 +25,8 @@ If you are unfamiliar with setting up a Flask server, please follow these steps 
 
 #### Setup Flask framework
 
+<img align="right" src="./docs/gif_sat_2.gif" height="300">
+
 Open the Anaconda Prompt and install Flask using:
 
 ```
