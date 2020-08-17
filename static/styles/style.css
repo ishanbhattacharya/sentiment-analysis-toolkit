@@ -1,0 +1,33 @@
+body{
+padding-top: 20px;
+font-family: Candara;
+}
+
+footer{
+text-align: center;
+padding-top:10px;
+padding-bottom: 10px;
+padding-left : 40px;
+font-family: Candara;
+position: fixed;
+  bottom: 0;
+  left:0;
+  right: 0;
+}
+
+a:link, a:visited {
+color: black;
+text-align: center;
+padding: 0px 10px;
+text-align: center;
+text-decoration: none;
+}
+
+a:hover{
+transition: 0.3s;
+color: #FFA500;
+}
+
+a:active {
+font-weight:bold;
+}

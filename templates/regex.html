@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>Sentiment Analyzer</TITLE>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</HEAD>
+<BODY>
+<CENTER>
+<H1><FONT color="#FFA500">Regex</FONT> Checker</H1>
+<div id="but">
+<form method=get action="/regex">
+      Enter regex: <input name="regexString" type="text" value="{{regexString}}" /><BR><BR>
+      Enter strings: <BR><textarea name="stringList" rows=10 cols=35>{{stringList}}</textarea><BR><BR>
+      <input type=submit value="Get Matches">
+    </form>
+    <BR>
+    <FONT color="red">{{score}}</FONT>
+    <BR><BR>
+    <B>{{results}}</B><BR><BR>
+<A HREF="/">&lt;&lt;Home</A>
+</div>
+</CENTER>
+</BODY>
+</HTML>

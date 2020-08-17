@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>Sentiment Analyzer</TITLE>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</HEAD>
+<BODY>
+<CENTER>
+<H1><FONT color="#FFA500">Word</FONT> Cloud</H1>
+<div id="but">
+<form method=get action="/wordcloud">
+      Enter sentence(s): <BR><textarea name="textToCheck" rows=5 cols=100>{{textToCheck}}</textarea><BR><BR>
+      <input type=submit value="Get Wordcloud">
+    </form>
+    <img src="/matplot-as-image-{{textToCheck}}.png"
+         alt="random points as png"
+         height="400"
+    ><BR>
+<A HREF="/">&lt;&lt;Home</A>
+</div>
+</CENTER>
+</BODY>
+</HTML>

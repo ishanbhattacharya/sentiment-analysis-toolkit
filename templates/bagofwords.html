@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE>Sentiment Analyzer</TITLE>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</HEAD>
+<BODY>
+<CENTER>
+<H1><FONT color="#FFA500">Sentiment</FONT> Analysis</H1>
+<div id="but">
+<form method=get action="/bagofwords">
+      Enter sentence: <BR><textarea name="textToCheck" rows=5 cols=100>{{textToCheck}}</textarea><BR><BR>
+      <input type=submit value="Get Sentiment">
+    </form>
+    <BR>
+    <B>Result using self-trained Bag of Words Model</B><BR>
+    {{result}}<BR><BR>
+    <B>Result using self-trained Word Vector Model</B><BR>
+    {{result2}}<BR><BR>
+    <B>Result using TextBlob</B><BR>
+    Subjectivity: {{sub}}<BR>Polarity: {{pol}}<BR>Result: {{tresult}}<BR><BR><BR>
+<A HREF="/">&lt;&lt;Home</A>
+</div>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>Sentiment Analyzer</TITLE>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</HEAD>
+<BODY>
+<CENTER>
+<H1>Effect of <FONT color="#FFA500">Stemming/Lemmatization</FONT></H1>
+<div id="but">
+<form method=get action="/stemlemma">
+      Enter sentence: <BR><textarea name="textToCheck" rows=5 cols=100>{{textToCheck}}</textarea><BR><BR>
+      <input type=submit value="Get Sentiment">
+    </form>
+    <BR>
+    <B>Result using self-trained Bag of Words Model</B><BR>
+    {{result}}<BR><BR>
+    <B>Effect of Stemming</B><BR>
+    {{str2}}<BR>
+    {{result2}}<BR><BR>
+    <B>Effect of Lemmatization(n)</B><BR>
+    {{str3}}<BR>
+    {{result3}}<BR><BR><BR>
+<A HREF="/">&lt;&lt;Home</A>
+</div>
+</CENTER>
+</BODY>
+</HTML>
