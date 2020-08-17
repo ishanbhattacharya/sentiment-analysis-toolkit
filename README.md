@@ -48,6 +48,8 @@ And, we're good to go!
 
 ## Deployment
 
+<img align="right" src="./docs/ss_sat_1.JPG" height="150">
+
 Open the file **app.py** using Spyder and run. (or using CMD)
 
 The server runs on *127.0.0.01:5000* by default, which can be accessed using any web browser on the local machine.
