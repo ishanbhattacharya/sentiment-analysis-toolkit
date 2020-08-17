@@ -9,7 +9,7 @@ This is implemented as a website using Flask framework.
 
 If you are unfamiliar with setting up a Flask server, please follow these steps carefully.
 
-<img align="right" src="./docs/gif_sat_1.gif" height="400">
+<img align="right" src="./docs/gif_sat_1.gif" height="300">
 
 ### Prerequisites
 
